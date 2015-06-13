@@ -11,7 +11,7 @@ sub startup {
 	'/' => sub {
 	    my $controller = shift;
 	    
-	    $controller->render(text => 'Hello, World!');
+	    $controller->render(template => 'index', format => 'html');
 	});
 }
 

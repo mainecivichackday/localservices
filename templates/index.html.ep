@@ -1,4 +1,3 @@
-% layout 'default';
-% title 'Welcome';
+<head><link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'><style>body { font-family: 'Roboto', sans-serif; }</style></head>
 Welcome to the Mojolicious real-time web framework!
 

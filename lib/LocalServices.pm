@@ -19,6 +19,12 @@ sub startup {
 	    $controller->render(template => 'search', format => 'html');
 	});
     
+    $router->post(
+	'/results' => sub {
+            my $controller = shift;
+	    $controller->render(template => 'results', format => 'html');
+	});
+    
     $router->get(
         '/testpage' => sub {
 	    my $controller = shift;

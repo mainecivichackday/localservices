@@ -1,0 +1,4 @@
+%layout 'default';
+%title 'Search Local Services';
+<div id="searchbox"><input type="text" /></div>
+

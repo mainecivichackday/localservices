@@ -40,11 +40,11 @@ sub startup {
 	    LocalServices->import;
 	    my ($db, $user, $pass) = (
 		$config->{'db'}->{'name'},
-		$config->['db'}->{'username'},
+		$config->{'db'}->{'username'},
 		$config->{'db'}->{'password'},
 		);
 	    
-	    my $schema = LocalServices::Schema->connect("dbi:mysql:dbname=$db", $user, $password);
+	    my $schema = LocalServices::Schema->connect("dbi:mysql:dbname=$db", $user, $pass);
 	    my $category = $schema->resultset('Category')->find(0);
 	    $controller->render(text => $category->name);
 	});

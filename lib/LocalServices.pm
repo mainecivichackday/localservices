@@ -8,13 +8,7 @@ sub startup {
     my $router = $self->routes;
 
     $router->get(
-		'/' => sub {
-	    my $controller = shift;	    
-	    $controller->render(template => 'index', format => 'html');
-	});
-	
-    $router->get(
-        '/search' => sub {
+        '/' => sub {
 	    my $controller = shift;
 	    $controller->render(template => 'search', format => 'html');
 	});
@@ -35,11 +29,6 @@ sub startup {
 	    $controller->render(template => 'categories', format => 'html');
     });
 
-    $router->get(
-        '/search' => sub {
-	    my $controller = shift;
-	    $controller->render(template => 'search', format => 'html');
-	});
 }
 
 1;

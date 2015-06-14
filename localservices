@@ -5,5 +5,25 @@ use strict;
 
 use lib 'lib';
 
+# Create default configuration file if necessary:
+unless (-f 'config.json') {
+    {
+	local $/ = undef;
+	open my $cfh, '>', 'config.json' or die "can't open config file: $!\n";
+	print $cfh <DATA>;
+	close $cfh;
+    }
+}
+
 require Mojolicious::Commands;
 Mojolicious::Commands->start_app('LocalServices');
+
+__DATA__
+{
+  "db": 
+    {
+      "name": "YOURDBNAME",
+      "username": "YOURDBUSERNAME",
+      "password": "YOURDBPASSWORD"
+    }
+}

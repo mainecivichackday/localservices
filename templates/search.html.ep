@@ -6,4 +6,7 @@
     <input name="query" id="query" type="search" form="searchform"/>
     <input id="submitquery" type="submit" value="Submit" form="searchform"/>
 </div>
+<div id="categories">
+  <a href="categories">Browse Categories</a>
+</div>
 

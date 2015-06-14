@@ -6,6 +6,6 @@
   <input id="submitquery" type="submit" value="Submit" form="resultsearch"/>
 </div>
 <div id="resultsfloat">
-  <%= $resultslist %>
+  <%= $categorieslist %>
 </div>
 

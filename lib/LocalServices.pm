@@ -22,11 +22,19 @@ sub startup {
     $router->post(
 	'/results' => sub {
             my $controller = shift;
-	    my $results = '';
-	    $self->stash(resultslist => $results);
+	    my $resultslist = '';
+	    $controller->stash(resultslist => $resultslist);
 	    $controller->render(template => 'results', format => 'html');
 	});
     
+    $router->get(
+        '/categories' => sub {
+	    my $controller = shift;
+	    my $categories = '';
+	    $controller->stash(categorieslist => $categories);
+	    $controller->render(template => 'categories', format => 'html');
+    });
+
     $router->get(
         '/search' => sub {
 	    my $controller = shift;

@@ -22,6 +22,8 @@ sub startup {
     $router->post(
 	'/results' => sub {
             my $controller = shift;
+	    my $results = '';
+	    $self->stash(resultslist => $results);
 	    $controller->render(template => 'results', format => 'html');
 	});
     

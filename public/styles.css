@@ -7,7 +7,7 @@ html, body {
 }
 #searchbox {
 	position: absolute;
-	top: 30%;
+	top: 31%;
 	left: 30%;
 	width: 40%;
 	height: 5%;
@@ -23,7 +23,10 @@ html, body {
 	position: relative;
 	bottom: 0px;
 	left: 0px;
-	width: 94%;
+	border: 0px;
+	display: inline-block;
+	width: 93%;
+	float: left;
 	font-size: 24pt;
 	height: 100%;
 	padding: 0px;
@@ -33,7 +36,9 @@ html, body {
 	bottom: 0px;
 	border: 0px;
 	right: 0px;
-	width: 5%;
+	width: 7%;
 	height: 100%;
+	display: inline-block;
+	float: right;
 	padding: 0px;
 }

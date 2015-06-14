@@ -43,7 +43,7 @@ sub startup {
 		);
 	    
 	    my $schema = LocalServices::Schema->connect("dbi:mysql:dbname=$db", $user, $pass);
-	    my $category = $schema->resultset('Category')->find(0);
+	    my $category = $schema->resultset('Category')->find(1);
 	    $controller->render(text => $category->name);
 	});
 

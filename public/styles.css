@@ -7,15 +7,33 @@ html, body {
 }
 #searchbox {
 	position: absolute;
-	top: 39%;
+	top: 30%;
 	left: 30%;
 	width: 40%;
 	height: 5%;
 }
-#searchbox > input {
+#searchbox > h2 {
 	position: relative;
-	top: 0px;
+	top: 0%;
+	height: 49%;
+	left: 5%;
+	font-size: 22pt;
+}
+#searchbox > #query {
+	position: relative;
+	bottom: 0px;
 	left: 0px;
-	width: 100%;
+	width: 94%;
+	font-size: 24pt;
 	height: 100%;
+	padding: 0px;
+}
+#searchbox > #submitquery {
+	position: relative;
+	bottom: 0px;
+	border: 0px;
+	right: 0px;
+	width: 5%;
+	height: 100%;
+	padding: 0px;
 }

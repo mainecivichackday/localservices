@@ -3,8 +3,9 @@ package LocalServices::Schema;
 use warnings;
 use strict;
 
-
+use DBIx::Class::Schema;
 use base 'DBIx::Class::Schema';
+
 
 __PACKAGE__->load_namespaces;
 

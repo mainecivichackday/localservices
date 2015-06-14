@@ -1,7 +1,7 @@
 package LocalServices;
 
 use Mojo::Base 'Mojolicious';
-
+use LocalServices::Schema;
 
 sub startup {
     my $self = shift;
@@ -36,8 +36,6 @@ sub startup {
 	    my $config = (Config::Any->load_files(
 			      { files => ['config.json']}))->[0]->{'config.json'};
 
-	    require 'LocalServices::Schema';
-	    LocalServices->import;
 	    my ($db, $user, $pass) = (
 		$config->{'db'}->{'name'},
 		$config->{'db'}->{'username'},

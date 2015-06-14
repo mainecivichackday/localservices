@@ -3,6 +3,7 @@ package LocalServices::Schema::Result::Location;
 use warnings;
 use strict;
 
+use DBIx::Class::Core;
 use base 'DBIx::Class::Core';
 
 

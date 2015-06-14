@@ -17,8 +17,12 @@ sub startup {
         '/search' => sub {
 	    my $controller = shift;
 	    $controller->render(template => 'search', format => 'html');
-	}
-	);
+	});
+    $router->get(
+        '/testpage' => sub {
+	    my $controller = shift;
+	    $controller->render(template => 'testpage', format => 'html');
+	});
 }
 
 1;

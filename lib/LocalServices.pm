@@ -12,17 +12,17 @@ sub startup {
 	    my $controller = shift;	    
 	    $controller->render(template => 'index', format => 'html');
 	});
-	
-    $router->get(
-        '/search' => sub {
-	    my $controller = shift;
-	    $controller->render(template => 'search', format => 'html');
-	});
-    
+	    
     $router->get(
         '/testpage' => sub {
 	    my $controller = shift;
 	    $controller->render(template => 'testpage', format => 'html');
+	});
+	
+	    $router->get(
+        '/search' => sub {
+	    my $controller = shift;
+	    $controller->render(template => 'search', format => 'html');
 	});
 }
 
